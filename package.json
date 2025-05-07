@@ -1,0 +1,19 @@
+{
+  "name": "intro-to-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "npx playwright test tests-examples/",
+    "test:e2e:all": "npx playwright test tests-examples --project=all-browsers-and-tests",
+    "test:e2e:dev": "npx playwright test tests/ch3.spec.ts --project=chromium --headed --retries=1",
+    "test:e2e:smoke": "npx playwright test tests-examples --grep-invert @smoke --project=chromium --retries=0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.28"
+  }
+}
