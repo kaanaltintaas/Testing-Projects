@@ -12,7 +12,7 @@ test.describe('Amazon Suite', () => {
 
     test('has Title', async({}) => {
         await page.goto('https://www.amazon.com.tr/');
-        //expect(page.locator('title')).toContainText('Amazon');
+        //expect(page.locator('title')).toContainText('Amazon');adaefsafs
         await expect(page).toHaveTitle(/Amazon/);
     });
 
