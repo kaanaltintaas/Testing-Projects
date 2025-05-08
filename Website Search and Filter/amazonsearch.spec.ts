@@ -31,7 +31,6 @@ test.describe('Amazon Suite', () => {
 
     test('Prime Option', async({}) => {
         await page.getByLabel('BEDAVA Teslimat').click();
-        //const locator = page.locator('//*[@id="p_85/21345931031"]/span/a/div/label/input')
         await expect(page.locator('label:BEDAVA Teslimat')).toHaveCount(0);
     });
 });
